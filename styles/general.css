@@ -9,7 +9,7 @@
 
 /* Kelli is using the "Cormorant Garamond Light" font for all the serif font in her website but that is likely to change */
 
-.page-header { 
+header { 
     background-color: var(--base_color);
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     padding-left: 5%;
   }
   
-  .page-title {
+  h1 {
     color: var(--text_color);
     font-size: 45%;
     display: inline-block;
