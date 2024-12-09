@@ -54,25 +54,20 @@ footer {
   text-align: center;
 }
 
+/* Social Media button */
 
-
-
-
-.social {
+/* .social {
     background: url('your-image.jpg') no-repeat center;
     background-size: cover;
     border: none;
-    width: 100px; /* Set the width of the button */
-    height: 100px; /* Set the height of the button */
+    width: 100px; 
+    height: 100px; 
     cursor: pointer;
   }
   .social {
-    opacity: 0.8; /* Optional: add hover effect */
+    opacity: 0.8; 
   }
 
-
-
-/* 
 
 .social {
     background: none;

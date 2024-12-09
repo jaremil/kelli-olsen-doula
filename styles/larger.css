@@ -17,7 +17,7 @@
   display: inline-block;
 }
 
-/* button in bottom right corner */
+/* Chat button in bottom right corner */
 .chat_button {
     background-color: var(--accent_color);
     color: white;
