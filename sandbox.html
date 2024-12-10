@@ -11,20 +11,25 @@
               <span class="text2">
                 Pregnancy
               </span>
-              <span class="text3">
+              <span class="text2">
                 Guidance
               </span>
-              <span class="text4">
-                & Support
+              <span class="text2">
+                &Support
               </span>
           </div>
       </div>
   
       <style>
-        body {
-            padding: 0; 
-            margin: 0;
-        }
+        :root {
+  --base_color: #abcda5;
+  --primary_color: #d5d5d5;
+  --accent_color: #658b67;
+  --footer_color: #cce6c8;
+  --background_color: #f5f7f9;
+  --heading_font: Sen, Arial, sans-serif;
+  --body_font: Archivo, Arial, sans-serif;
+}
 
         .container {
             text-align: center; 
@@ -42,45 +47,53 @@
 
         .text1 {
             display: block; 
-            color: #abcda5;
+            color: var(--base_color);
             font-size: 600%; 
-            font-weight: 700; 
-            letter-spacing: 8px; 
             margin-bottom: 20px; 
             position: relative; 
-            animation: text 3s 1;
+            animation: text1 3s 1;
         }
 
         .text2 {
             font-size: 30px; 
-            color: #abcda5;
+            color: var(--base_color);
+            animation: text2 3s 1;
+            word-spacing: 75px;
         }
 
-        .text3 {
-            font-size: 30px; 
-            color: #abcda5;
-        }
-
-        .text4 {
-            font-size: 30px; 
-            color: #abcda5;
-        }
-
-          @keyframes text {
+          @keyframes text1 {
               0% {
-                  color: #bee1b9;
+                  /* color: #bee1b9; */
                   margin-bottom: -10px;
               }
               30% {
-                  letter-spacing: 25px;
+                  letter-spacing: 5px;
                   margin-bottom: -10px;
+                  color: #cfe4cc;
               }
               85% {
-                  letter-spacing: 8px;
+                  letter-spacing: 2px;
                   margin-bottom: -20px;
+                  /* color: #bee1b9; */
               }
           }
 
+          @keyframes text2 {
+              0% {
+                word-spacing: 0px;
+                color: white;
+              }
+     
+              30% {
+                  word-spacing: 3px;
+                  margin-bottom: -10px;
+              
+              }
+              85% {
+                word-spacing: 5px;
+                color: #bee1b9;
+              }
+          }
       </style>
 <!-- 
       <div>hello</div>
