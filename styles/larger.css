@@ -14,14 +14,14 @@
 
 /* images */
 
-.hero {
-  width: 20%;
+/* .hero {
+  width: 75%;
   display: block;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
-}
+} */
 
 /* chat button in bottom right corner */
 .chat_button {
@@ -55,6 +55,7 @@ nav ul {
   font-size: 15px;
   margin-top: 25px;
   margin-bottom: 25px;
+  margin-left: 35px;
 }
 
 nav ul li a {
@@ -129,19 +130,21 @@ ul {
   top: 50%;
   left: 50%;
   width: 100%;
+  margin-top: 10%;
 }
 
 .row {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
+  width: 100%;
 }
 
 .text1 {
   font-family: var(--heading_font);
   display: block;
   color: var(--base_color);
-  font-size: 600%;
+  font-size: 100px;
   margin-top: 5%;
   margin-bottom: 20px;
   position: relative;
@@ -186,5 +189,55 @@ ul {
   85% {
     word-spacing: 5px;
     color: #bee1b9;
+  }
+}
+
+/* Image Carousel */
+
+.carousel {
+  position: absolute;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  color: var(--base_color);
+  background-color: white;
+  border: none;
+  font-size: 50px;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.carousel-control:hover {
+  color: var(--accent_color);
+}
+
+/* Sizing */
+
+@media (max-width: 1150px) {
+  /* .navBar {
+    font-size: 15%;
+  } */
+  .row {
+   width: 100%;
   }
 }
