@@ -42,10 +42,6 @@ span {
   margin-bottom: 25px;
 }
 
-.navBar {
-  font-family: var(--heading_font);
-}
-
 footer {
   background-color: var(--base_color);
   font-family: var(--heading_font);
@@ -59,35 +55,3 @@ footer {
   padding: 10px;
   text-align: center;
 }
-
-/* Social Media button */
-
-/* .social {
-    background: url('your-image.jpg') no-repeat center;
-    background-size: cover;
-    border: none;
-    width: 100px; 
-    height: 100px; 
-    cursor: pointer;
-  }
-  .social {
-    opacity: 0.8; 
-  }
-
-
-.social {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    width: 24px;
-  }
-  
-  .social img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .social img:hover {
-    filter: brightness(1.2);
-  } */

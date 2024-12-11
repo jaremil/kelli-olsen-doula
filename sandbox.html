@@ -2,81 +2,54 @@
 <html lang="en">
 <head></head>
 <body>
-
-  <nav>
-    <ul class="heading">
-      <li><a class="navBar" href="#about_section">About</a></li>
-      <li><a class="navBar" href="#consultation_section">Free Consultation</a></li>
-      <li><a class="navBar" href="#support_services_section">Services</a></li>
-      <li><a  class="navBar" href="#packages_section">Birth Package</a></li>
-      </ul>
-  </nav>
-
-  <a href="#" class="animated-link">Hover Me</a>
-  <a href="#" class="animated-link">Hover Me</a>
-  <a href="#" class="animated-link">Hover Me</a>
-  <a href="#" class="animated-link">Hover Me</a>
-
+  <button href="https://www.facebook.com/profile.php?id=100089384556479"><img class="social" src="images/facebook.png" alt="Facebook"></button>
+  <button href="https://www.instagram.com/kelliolsendoula/"><img class="social" src="images/instagram.png" alt="Instagram"></button>
+  <button href="https://www.linkedin.com/in/kelli-olsen/"><img class="social" src="images/linkedin.png" alt="LinkedIn"></button>
 </body>
+<footer>
+  <button href="https://www.facebook.com/profile.php?id=100089384556479"><img class="social" src="images/facebook.png" alt="Facebook"></button>
+  <button href="https://www.instagram.com/kelliolsendoula/"><img class="social" src="images/instagram.png" alt="Instagram"></button>
+  <button href="https://www.linkedin.com/in/kelli-olsen/"><img class="social" src="images/linkedin.png" alt="LinkedIn"></button>
+</section>
+</footer>
 </html>
 
 <style>
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  font-size: 15px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+
+.social {
+  width: 15%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
-nav ul li a {
-  color: var(--nav-color);
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px;
-  margin: 0 15px;
+.social {
+  background: url('your-image.jpg') no-repeat center;
+  background-size: cover;
+  border: none;
+  width: 100px; 
+  height: 100px; 
+  cursor: pointer;
+}
+.social {
+  opacity: 0.8; 
 }
 
-ul {
-  list-style: none;
-}
 
-.navBar:hover {
-  border-style: none none solid none;
-  letter-spacing: 5px;
+.social {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 24px;
 }
-
-.animated-link {
-  position: relative;
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
+  
+.social img {
+  width: 24px;
+  height: 24px;
 }
-
-.animated-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  height: 2px;
-  width: 0;
-  background-color:  #abcda5;
-}
-
-.animated-link:hover::after {
-  animation: underline_nav 0.4s ease-in-out forwards;
-}
-
-@keyframes underline_nav {
-  from {
-    width: 0;
-    background-color:  #658b67;
-  }
-  to {
-    width: 100%;
-    background-color:  #abcda5;
-  }
+  
+.social img:hover {
+  filter: brightness(1.2);
 }
 </style>
