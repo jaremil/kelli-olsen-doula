@@ -1,5 +1,5 @@
 /* importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lexend+Exa:wght@100..900&display=swap');
 
 /* custom properties */
 :root {
@@ -8,7 +8,7 @@
   --accent_color: #658b67;
   --footer_color: #cce6c8;
   --background_color: #f5f7f9;
-  --heading_font: Sen, Arial, sans-serif;
+  --heading_font: "Lexend Exa", Arial, sans-serif;
   --body_font: Archivo, Arial, sans-serif;
 }
 
@@ -42,12 +42,18 @@ span {
   margin-bottom: 25px;
 }
 
+.navBar {
+  font-family: var(--heading_font);
+}
+
 footer {
   background-color: var(--base_color);
+  font-family: var(--heading_font);
   color: white;
 }
 
 .footer_text {
+  font-family: var(--heading_font);
   margin: auto;
   width: 50%;
   padding: 10px;

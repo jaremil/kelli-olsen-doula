@@ -1,202 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> </head>
-  <!-- one -->
-  <body>
-    <div class="container">
-      <div class="row">
-        <span class="text1"> Kelli Olsen, Doula </span>
-        <span class="text2"> Pregnancy Guidance &Support</span>
-      </div>
-    </div>
-
-    <style>
-      :root {
-        --base_color: #abcda5;
-        --primary_color: #d5d5d5;
-        --accent_color: #658b67;
-        --footer_color: #cce6c8;
-        --background_color: #f5f7f9;
-        --heading_font: Sen, Arial, sans-serif;
-        --body_font: Archivo, Arial, sans-serif;
-      }
-
-      .container {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-      }
-
-      .row {
-        margin-top: 25px;
-        margin-bottom: 25px;
-      }
-
-      .text1 {
-        font-family: var(--heading_font);
-        display: block;
-        color: var(--base_color);
-        font-size: 600%;
-        margin-bottom: 20px;
-        position: relative;
-        animation: text1 3s 1;
-      }
-
-      .text2 {
-        font-family: var(--heading_font);
-        font-size: 30px;
-        color: var(--base_color);
-        animation: text2 3s 1;
-        word-spacing: 75px;
-      }
-
-      @keyframes text1 {
-        0% {
-          margin-bottom: 5px;
-        }
-        30% {
-          letter-spacing: 5px;
-          margin-bottom: 5px;
-          color: #cfe4cc;
-        }
-        85% {
-          letter-spacing: 2px;
-          margin-bottom: 0px;
-        }
-      }
-
-      @keyframes text2 {
-        0% {
-          word-spacing: 0px;
-          color: white;
-        }
-
-        50% {
-          word-spacing: 3px;
-          margin-bottom: -10px;
-        }
-        85% {
-          word-spacing: 5px;
-          color: #bee1b9;
-        }
-      }
-    </style>
-    <!-- 
-      <div>hello</div>
-       
-      <style>
-      @keyframes example {
-        0%   {background-color:#c6d2f0; left: 0px;}
-        10%   {background-color:#c6d2f0; left: 5px;}
-        20%  {background-color:#d1d9eb; left: 10px;}
-        30%  {background-color:#d1d9eb; left: 15px;}
-        40%  {background-color:#dfe6f7; left: 20px;}
-        50%  {background-color:#dfe6f7; left: 25px;}
-        60%  {background-color:#f1f5ff; left: 30px;}
-        70%  {background-color:#f1f5ff; left: 35px;}
-        80% {background-color:white; left: 40px;}
-        90% {background-color:white; left: 45px;}
-        100% {background-color:white; left: 50px;}
-      }
-      
-      div {
-        width: 100px;
-        height: 100px;
-        position: relative;
-        animation-name: example;
-        animation-duration: 4s;
-      }
-    </style>
-      
-  </body>
-  </html> -->
-    <!-- 
-    <style>
-
-    </style>
-  </head>
-  <body>
-
-    <header>
-        <button class="chat_button">Let's Chat!</button>
-  
-        <button id="menu" class="open" aria-label="hamburger menu"></button>
-  
-        <nav>
-          <ul class="heading">
-            <li><a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a></li>
-            <li><a class="navBar" href="">About</a></li>
-            <li><a class="navBar" href="#">Free Consultation</a></li>
-            <li><a class="navBar" href="#">Services</a></li>
-            <li><a  class="navBar" href="#">Birth Package</a></li>
-            <li><a class="navBar" href="#">Contact Me</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            </ul>
-        </nav>
-  
-        <h1 class="header_title">Kelli Olsen Doula</h1>
-  
-      </header>
-  
-  <div id="section1">
-
-    <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
-  </div>
-  
-  <div id="section2">
-    <h2>Section 2</h2>
-    <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
-  </div>
-  
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const links = document.querySelectorAll('a[href^="#"]');
-      
-      links.forEach(link => {
-        link.addEventListener('click', event => {
-          event.preventDefault();
-          
-          const targetId = link.getAttribute('href').substring(1);
-          const targetElement = document.getElementById(targetId);
-          
-          if (targetElement) {
-            targetElement.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
-          }
-        });
-      });
-    });
-  </script>
-  
-  </body> -->
-    <!-- </html> -->
-
-    <!-- <style>
-    .image-button {
-      background: url('your-image.jpg') no-repeat center;
-      background-size: cover;
-      border: none;
-      width: 100px; /* Set the width of the button */
-      height: 100px; /* Set the height of the button */
-      cursor: pointer;
-    }
-    .image-button:hover {
-      opacity: 0.8; /* Optional: add hover effect */
-    }
-  </style>
-</head>
+<head></head>
 <body>
 
-<button class="image-button" onclick="alert('Button clicked!')"></button>
+  <nav>
+    <ul class="heading">
+      <li><a class="navBar" href="#about_section">About</a></li>
+      <li><a class="navBar" href="#consultation_section">Free Consultation</a></li>
+      <li><a class="navBar" href="#support_services_section">Services</a></li>
+      <li><a  class="navBar" href="#packages_section">Birth Package</a></li>
+      </ul>
+  </nav>
+
+  <a href="#" class="animated-link">Hover Me</a>
+  <a href="#" class="animated-link">Hover Me</a>
+  <a href="#" class="animated-link">Hover Me</a>
+  <a href="#" class="animated-link">Hover Me</a>
 
 </body>
-</html> -->
-  </body>
 </html>
+
+<style>
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+nav ul li a {
+  color: var(--nav-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+.navBar:hover {
+  border-style: none none solid none;
+  letter-spacing: 5px;
+}
+
+.animated-link {
+  position: relative;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.animated-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background-color:  #abcda5;
+}
+
+.animated-link:hover::after {
+  animation: underline_nav 0.4s ease-in-out forwards;
+}
+
+@keyframes underline_nav {
+  from {
+    width: 0;
+    background-color:  #658b67;
+  }
+  to {
+    width: 100%;
+    background-color:  #abcda5;
+  }
+}
+</style>
