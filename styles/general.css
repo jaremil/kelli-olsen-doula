@@ -101,6 +101,28 @@ ul {
   }
 }
 
+@media (max-width: 800px) {
+  nav ul {
+    font-size: 15px;
+  }
+  
+  .navBar {
+    font-size: 125%;
+  }
+  
+  .socialButton {
+    width: 15%;
+  }
+  
+  .socialImg {
+    width: 25%;
+  }
+  
+  .socialImg:hover {
+    width: 35%;
+  }
+}
+
 /* navigation transition to page section, smooth scroll */
 
 #section1 {
