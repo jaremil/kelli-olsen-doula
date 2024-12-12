@@ -164,3 +164,42 @@
 @media (min-width: 800px) {
 
 }
+
+#definition_section{
+  display: grid;
+  grid-template-columns: .05fr .5fr 1fr .05fr;
+  background-color: #cce6c8; 
+}
+
+#definition_section h1{
+  vertical-align: middle;
+  text-align: right;
+  grid-column: 2/3;
+  padding: 30px 0px;
+}
+
+#definition_section p{
+  grid-column: 3/4;
+  text-align: left;
+
+  padding: 10px 20px;
+}
+/* Support Services and Free Consultation Grid */
+/* #sscs_grid {
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+#support_services_section{
+  grid-column: 1/2;
+}
+#consultation_section{
+  grid-column: 2/3;
+} */
+ #packages_section{
+  text-align: center;  
+ }
+ #packages_section p{
+  padding: 0 450px 45px;
+
+}

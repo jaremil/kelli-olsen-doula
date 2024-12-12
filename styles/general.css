@@ -117,11 +117,16 @@ ul {
 
 
 main {
+  text-align: center;
   margin: 5%;
 }
-
+main p{
+  /* padding: 0 1fr .1fr; */
+  text-align: center;
+}
 h1 {
   font-family: var(--heading_font);
+  text-align: center;
   display: inline-block;
   padding-top: 10px;
   padding-bottom: 10px;
