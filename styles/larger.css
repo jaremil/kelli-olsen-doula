@@ -26,6 +26,10 @@
   background-image: url("/images/olsen_wedding.webp");
 }
 
+.support_services {
+  width: 100%;
+}
+
 /* .hero {
   width: 75%;
   display: block;
@@ -127,12 +131,122 @@
   }
 }
 
+/* navigation */
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 15px;
+  margin-bottom: 25px;
+  margin-left: 35px;
+  padding-top: 50px;
+}
+
+nav ul li a {
+  color: var(--nav-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 15px;
+}
+
+ul {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+
+.navBar {
+  position: relative;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 115%;
+  font-family: var(--heading_font);
+}
+
+.navBar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background-color:  #abcda5;
+}
+
+.navBar:hover::after{
+  animation: underline_nav 0.4s ease-in-out forwards;
+}
+
+.socialButton {
+  width: 15%;
+  background: white;
+  border: none;
+  padding: 0;
+}
+
+.socialImg {
+  margin-top: 10px;
+  padding: 0%;
+  width: 50px;
+}
+
+a.socialButton {
+  padding: -10px;
+  align-items: center;
+}
+
+/* .socialImg:hover {
+  margin-bottom: 50px;
+  width: 30%;
+} */
+
+/* .socialImg:hover::after{
+  animation: underline_nav 0.4s ease-in-out forwards;
+} */
+
+@keyframes underline_nav {
+  from {
+    width: 0;
+    background-color:  #ccf5c6;
+    
+  }
+  to {
+    width: 100%;
+    background-color:  #abcda5;
+  }
+}
+
+/* navigation transition to page section, smooth scroll */
+
+#section1 {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+#section1 {
+  background-color: pink;
+}
+
 /* Image Carousel */
 
 .carousel {
   position: sticky;
   max-width: 600px;
   overflow: hidden;
+  margin: auto;
 }
 
 .carousel-inner {
@@ -141,15 +255,15 @@
 }
 
 .carousel-inner img {
-  width: 50%;
-  height: 100%;
+  width: 2000%;
+  height: 200px;
 }
 
 .carousel-control {
   position: absolute;
-  top: 50%;
-  color: var(--base_color);
-  background-color: white;
+  top: 40%;
+  color: white;
+  background-color: transparent;
   border: none;
   font-size: 50px;
 }
@@ -167,15 +281,98 @@
 }
 
 /* Sizing */
-/* 800px and down */
+
+/* 700px and down */
+@media (max-width: 500px) {
+  .navBar {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .carousel-inner img {
+    width: 100%;
+    height: 300%;
+  }
+}
+
+/* 700px and up */
+@media (min-width: 700px) {
+
+}
+
 @media (max-width: 800px) {
+  nav ul {
+    font-size: 15px;
+  }
+  
+  .navBar {
+    font-size: 100%;
+  }
+  
+  .socialButton {
+    width: 15%;
+  }
+  
+  .socialImg {
+    width: 25%;
+  }
+  
+  .socialImg:hover {
+    width: 35%;
+  }
+}
+
+@media (max-width: 900px) {
+  .socialButton {
+    display: none;
+  }
+  .socialImg {
+    display: none;
+  }
+  .socialButton_about {
+    width: 15%;
+    background: white;
+    border: none;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  .socialImg_about {
+    margin-top: 10px;
+    padding: 0%;
+    width: 50px;
+  }
+  
+  a.socialButton_about {
+    padding: -10px;
+    align-items: center;
+  }
+}
+
+@media (min-width: 900px) {
+  /* .socialButton {
+    display: none;
+  }
+  .socialImg {
+    display: none;
+  } */
+  .socialButton_about {
+    display: none;
+  }
+  
+  .socialImg_about {
+    display: none;
+  }
+  
+  a.socialButton_about {
+    display: none;
+  }
+
 
 }
 
-/* 800px and up */
-@media (min-width: 800px) {
-
-}
+/* Body sections */
 
 #definition_section{
   display: grid;
