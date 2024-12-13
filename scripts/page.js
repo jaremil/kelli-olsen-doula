@@ -57,10 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // hamburger menu
 
-const handButton = document.querySelector('#menu');
-const heading = document.querySelector('.heading');
+// const handButton = document.querySelector('#menu');
+// const heading = document.querySelector('.heading');
 
-handButton.addEventListener('click', () => {
-    heading.classList.toggle('open');
-    handButton.classList.toggle('open');
-});
+// handButton.addEventListener('click', () => {
+//     heading.classList.toggle('open');
+//     handButton.classList.toggle('open');
+// });
