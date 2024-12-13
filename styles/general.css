@@ -84,9 +84,8 @@ ul {
 }
 
 .socialImg:hover {
-  margin-top: -15px;
-  padding: 0%;
-  width: 35%;
+  margin-bottom: 45px;
+  width: 30%;
 }
 
 @keyframes underline_nav {

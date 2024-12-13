@@ -14,6 +14,18 @@
 
 /* images */
 
+.aboutImg {
+  width: 25%;
+  height: 500px;
+  background-image: url("/images/kelli.png");
+  background-size: cover;
+  transition: background-image 1s ease;
+}
+
+.aboutImg:hover {
+  background-image: url("/images/olsen_wedding.webp");
+}
+
 /* .hero {
   width: 75%;
   display: block;
