@@ -131,6 +131,17 @@
     display: unset;
   }
 }
+@media (max-width: 450px){
+  #about_section{
+    margin: 20px auto;
+    font-size:small; 
+  }
+  .aboutImg{
+    max-width: 300px;
+    max-height: 350px;
+    margin: 0 auto;
+  }
+}
 
 @media (min-width: 900px) {
   .socialButton_about {
@@ -150,6 +161,15 @@
   .row {
     font-size: 80%;
   }
+  #about_section {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  } 
+  .aboutImg{
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -163,4 +183,19 @@
     font-size: 500%;
     transition: width 2s, height 4s;
   }
+}
+@media (max-width:1400px) {
+  #about_title {
+    padding-bottom: 0;
+  }
+ #about_section p{
+  font-size: large
+ } 
+}@media (max-width:1075px) {
+  #about_title {
+    padding-bottom: 0;
+  }
+ #about_section p{
+  font-size:medium;
+ } 
 }
