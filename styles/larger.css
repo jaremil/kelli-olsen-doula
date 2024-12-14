@@ -1,5 +1,5 @@
 /* Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lexend+Exa:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lexend+Exa:wght@100..900&display=swap");
 
 /* Custom Properties */
 
@@ -13,29 +13,53 @@
   --body_font: Archivo, Arial, sans-serif;
 }
 
-
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .socialImg {
     width: 18px;
     height: 18px;
+  }
+
+  .navBar {
+    font-size: 12px;
+  }
+
+  .container {
+    margin-top: 10%;
+  }
+
+  .text1 {
+    animation: none;
+  }
+  
+  .text2 {
+    animation: none;
+  }
+
+  .about_title {
+    padding-top: 100%;
+  }
 }
-.navBar {
-  font-size: 12px;
-}
-} 
 
 @media (max-width: 768px) {
-    .socialButton {
-        margin: 10px 5px;
-    }
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-      margin-left: auto;
-      margin-right: auto;
+  .socialButton {
+    margin: 10px 5px;
   }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   nav ul li {
-      margin: 10px 0;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .about_title {
+    margin-top: 45%;
   }
 }
 
@@ -47,17 +71,34 @@
   .socialImg {
     width: 20px;
     height: 20px;
-  } 
-  
+  }
+
   .socialImg:hover {
     width: 35%;
   }
 
-  nav ul {
-    font-size: 15%;
-  }
   .navBar {
-    font-size: 14px;
+    font-size: 150%;
+  }
+
+  .container {
+    width: 100%;
+    height: 20px;
+    font-size: 100%;
+    margin-bottom: 20%;
+  }
+  
+  .text1 {
+    animation: none;
+  }
+  
+  .text2 {
+    animation: none;
+    margin-bottom: 20%;
+  }
+
+  .footer_text {
+    font-size: 10%;
   }
 }
 
@@ -75,13 +116,13 @@
     padding: 0;
     text-decoration: none;
   }
-  
+
   .socialImg_about {
     margin-top: 10px;
     padding: 0%;
     width: 50px;
   }
-  
+
   a.socialButton_about {
     padding: -10px;
     align-items: center;
@@ -92,12 +133,31 @@
   .socialButton_about {
     display: none;
   }
-  
+
   .socialImg_about {
     display: none;
   }
-  
+
   a.socialButton_about {
     display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .row {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .text1 {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .text1 {
+    font-size: 500%;
+    transition: width 2s, height 4s;
   }
 }

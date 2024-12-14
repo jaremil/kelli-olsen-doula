@@ -35,17 +35,14 @@
   font-family: var(--heading_font);
   display: block;
   color: var(--base_color);
-  font-size: 100px;
-  margin-top: 5%;
-  margin-bottom: 20px;
-  position: relative;
+  font-size: 650%;
   animation: text1 3s 1;
   text-align: center;
 }
 
 .text2 {
   font-family: var(--heading_font);
-  font-size: 30px;
+  font-size: 200%;
   color: var(--base_color);
   animation: text2 3s 1;
   word-spacing: 75px;
@@ -178,12 +175,10 @@ a.socialButton {
 .socialImg {
   margin-top: 10px;
   padding: 0%;
-  width: 50px;
-  height: 24px;
+  width: 40px;
+  height: 25px;
   transition: transform 0.3s ease;
 }
-
-
 
 /* images */
 
